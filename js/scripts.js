@@ -1,8 +1,8 @@
 function hideResults() {
-  document.getElementById("python").setAttribute("class", "hidden");
-  document.getElementById("ruby").setAttribute("class", "hidden");
-  document.getElementById("cSharp").setAttribute("class", "hidden");
-  document.getElementById("java").setAttribute("class", "hidden");
+  document.getElementById("python").classList.add("hidden");
+  document.getElementById("ruby").classList.add("hidden");
+  document.getElementById("cSharp").classList.add("hidden");
+  document.getElementById("java").classList.add("hidden");
 }
 
 window.onload = function () {
@@ -10,8 +10,9 @@ window.onload = function () {
   let form = document.querySelector("form");
   form.onsubmit = function (event) {
     event.preventDefault();
-    hideResults;
-  }
+    inputTotal();
+  };
+
   function inputTotal() {
     let colorInput = document.getElementById("color");
     let foodInput = document.getElementById("food");
@@ -25,7 +26,17 @@ window.onload = function () {
     let selectedValueLocation = locationInput.options[locationInput.selectedIndex].value;
     let selectedValuePluto = plutoInput.options[plutoInput.selectedIndex].value;
 
-    let total = parseInt(selectedValueColor) + parseInt(selectedValueFood) + parseInt(selectedValueAnimal + parseInt(selectedValueLocation) + parseInt(selectedValuePluto));
-    console.log(total);
+    let total = parseInt(selectedValueColor) + parseInt(selectedValueFood) + parseInt(selectedValueAnimal) + parseInt(selectedValueLocation) + parseInt(selectedValuePluto);
+    console.log("Total:", total);
+
+    if (total >= 30) {
+      document.getElementById("python").classList.remove("hidden");
+    } else if (total < 30) {
+      document.getElementById("ruby").classList.remove("hidden");
+    } else if (total < 20) {
+      document.getElementById("cSharp").classList.remove("hidden");
+    } else {
+      document.getElementById("java").classList.remove("hidden");
+    }
   }
 };
