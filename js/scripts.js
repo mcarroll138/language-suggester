@@ -11,3 +11,8 @@ window.onload = function () {
     event.preventDefault();
   }
 }
+
+function handleSelect(event) {
+  event.preventDefault();
+  const selection = parseInt(document.getElementById("color").value;
+}
