@@ -9,10 +9,13 @@ window.onload = function () {
   document.querySelector("form").onsubmit = function (event) {
     hideResults();
     event.preventDefault();
-  }
-}
+    function handleSelect(event) {
+      event.preventDefault();
+      const totalPoints = parseInt(document.getElementById("color").value);
 
-function handleSelect(event) {
-  event.preventDefault();
-  const selection = parseInt(document.getElementById("color").value;
+      if (totalPoints > 0) {
+        print("test")
+      }
+    }
+  }
 }
