@@ -10,8 +10,12 @@ window.onload = function () {
   let form = document.querySelector("form");
   form.onsubmit = function (event) {
     event.preventDefault();
-    inputTotal();
   };
+
+  let button = document.querySelector("button");
+  button.addEventListener("click", function () {
+    inputTotal();
+  });
 
   function inputTotal() {
     let colorInput = document.getElementById("color");
@@ -26,8 +30,13 @@ window.onload = function () {
     let selectedValueLocation = locationInput.options[locationInput.selectedIndex].value;
     let selectedValuePluto = plutoInput.options[plutoInput.selectedIndex].value;
 
-    let total = parseInt(selectedValueColor) + parseInt(selectedValueFood) + parseInt(selectedValueAnimal) + parseInt(selectedValueLocation) + parseInt(selectedValuePluto);
-    console.log("Total:", total);
+    let total =
+      parseInt(selectedValueColor) +
+      parseInt(selectedValueFood) +
+      parseInt(selectedValueAnimal) +
+      parseInt(selectedValueLocation) +
+      parseInt(selectedValuePluto);
+    console.log("total", total);
 
     if (total >= 30) {
       document.getElementById("python").classList.remove("hidden");
