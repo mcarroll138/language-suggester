@@ -20,15 +20,75 @@
       <label for="name">First name</label>
       <input id="name" type="text">
       <div> </div>
-      <label for="favColor">What is your favorite color?</label>
-      <input id="favColor" type="text">
-      <div> </div>
-      <label for="yearBorn">What year were you born?</label>
-      <input id="yearBorn" type="text">
-      <div> </div>
-      <label for="numOfPlanets">How many planets are there in our solar system?</label>
-      <input id="numOfPlanets" type="text">
+      <form id="colorQuestion">
+        <label for="color">What is your favorite color?</label>
+        <select id="color">
+          <option value="0"></option>
+          <option value="1">Blue</option>
+          <option value="2">Orange</option>
+          <option value="3">Green</option>
+          <option value="4">Yellow</option>
+          <option value="5">Pink</option>
+          <option value="6">Purple</option>
+        </select>
+      </form>
+      <form id="foodQuestion">
+        <label for="food">What is your favorite food cuisine?</label>
+        <select id="food">
+          <option value="0"></option>
+          <option value="1">Mexican</option>
+          <option value="2">Indian</option>
+          <option value="3">Italian</option>
+          <option value="4">American</option>
+          <option value="5">Japanese</option>
+          <option value="6">Thai</option>
+        </select>
+      </form>
+      <form id="dogsCatsQuestion">
+        <label for="food">Cat person or dog person?</label>
+        <select id="food">
+          <option value="0"></option>
+          <option value="1">Cat</option>
+          <option value="2">Dog</option>
+          <option value="3">Both!</option>
+        </select>
+      </form>
+      <form id="locationQuestion">
+        <label for="location">Which landscape do you prefer?</label>
+        <select id="location">
+          <option value="0"></option>
+          <option value="1">Desert</option>
+          <option value="2">Mountains</option>
+          <option value="3">Beach</option>
+        </select>
+      </form>
+      <form id="plutoQuestion">
+        <label for="pluto">Is Pluto a planet or a star?</label>
+        <select id="pluto">
+          <option value="0"></option>
+          <option value="1">Star</option>
+          <option value="20">Planet por vida!</option>
+          <option value="20">This question upsets me, but I think you know where I stand.</option>
+        </select>
+      </form>
+      <button type="submit">Show me my language!</button>
     </form>
+    <div id="python" class="hidden">
+      <h1>Pluto will always be a planet in my eyes too, I think Python would be a great fit for you!</h1>
+    </div>
+    <div id="ruby" class="hidden">
+      <h1>I think Ruby is right up your alley!</h1>
+    </div>
+    <div id="cSharp" class="hidden">
+      <h1>For C#, first you got to be sharp and I think you got what it takes!</h1>
+    </div>
+    <div id="java" class="hidden">
+      <h1>I see heartache and pain in your future, followed by reward, I think JavaScript if the right path for you
+      </h1>
+    </div>
+    <div id="image" class="hidden">
+      <h1><img src="images/LeVar-Burton-Reading-Rainbow.jpeg" </h1>
+    </div>
   </div>
   </div>
 </body>
