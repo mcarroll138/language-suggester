@@ -6,16 +6,10 @@ function hideResults() {
 }
 
 window.onload = function () {
+  hideResults();
   document.querySelector("form").onsubmit = function (event) {
-    hideResults();
     event.preventDefault();
-    function handleSelect(event) {
-      event.preventDefault();
-      const totalPoints = parseInt(document.getElementById("color").value);
-
-      if (totalPoints > 0) {
-        print("test")
-      }
-    }
+    hideResults;
   }
-}
+};
+};

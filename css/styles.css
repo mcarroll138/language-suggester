@@ -3,3 +3,7 @@ img {
   padding: auto;
   float: left;
 }
+
+.hidden {
+  display: none;
+}
