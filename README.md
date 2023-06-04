@@ -2,8 +2,7 @@
 
 ### By Michael Carroll
 
-A website created to use branching to suggest a programming language for the end user. This website was created to utilize lists and branching. The recommendations are based on arbitrary numbers and values assigned to the form options. 
-Link to GH Page: https://mcarroll138.github.io/language-suggester/
+A website created to use branching to suggest a programming language for the end user. This website was created to utilize lists and branching. The recommendations are based on arbitrary numbers and values assigned to the form options.
 ## Technologies used 
 - HTML
 - CSS
